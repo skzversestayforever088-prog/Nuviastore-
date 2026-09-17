@@ -1,0 +1,147 @@
+:root {
+  --pink: #c77bad;
+  --pink-light: #f7ddeb;
+  --purple: #ddd4f5;
+  --blue: #d9edf5;
+  --mint: #dcefe7;
+  --cream: #fffaff;
+  --text: #514555;
+  --muted: #8c7f91;
+  --white: #ffffff;
+  --border: #eee4f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  padding-bottom: 90px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 250, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 18px;
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--pink);
+  font-family: cursive;
+  font-size: 27px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.logo-decor {
+  font-size: 18px;
+}
+
+.search-top {
+  flex: 1;
+  max-width: 430px;
+  position: relative;
+}
+
+.search-top input {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 22px;
+  padding: 11px 16px;
+  outline: none;
+  color: var(--text);
+}
+
+.search-top input:focus {
+  border-color: var(--pink);
+}
+
+/* MAIN */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 18px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* WELCOME */
+
+.welcome {
+  background: linear-gradient(135deg, var(--pink-light), var(--purple), var(--blue));
+  border-radius: 28px;
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.welcome h1 {
+  font-family: cursive;
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #9e6490;
+}
+
+.welcome p {
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+/* SECTIONS */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 28px 0 15px;
+}
+
+.section-title h2 {
+  font-size: 22
